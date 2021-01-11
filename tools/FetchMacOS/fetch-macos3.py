@@ -470,7 +470,7 @@ def main():
         name = product["name"]
         print('%s. %12s' % (index + 1, name))
 
-    answer = 4#input('\nChoose a product to download (1-%s): ' % len(products))
+    answer = 4 #input('\nChoose a product to download (1-%s): ' % len(products))
     try:
         index = int(answer) - 1
         if index < 0:
