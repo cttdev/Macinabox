@@ -480,14 +480,8 @@ def main():
 
     # action
     product = products[index]
-    try:
-        os_type = product["os_type"]
-    except:
-        os_type = "default"
-    args = gdata(mlb = product["m"], board_id = product["b"], diagnostics =
-            False, os_type = os_type, verbose=False, basename="", outdir=".")
+    args = data(mlb = product["m"], board_id = product["b"], diagnostics = False, os_type = "default", verbose=True, basename="", outdir="BaseSystem/")
     action_download(args)
-
 
 if __name__ == '__main__':
     sys.exit(main())
